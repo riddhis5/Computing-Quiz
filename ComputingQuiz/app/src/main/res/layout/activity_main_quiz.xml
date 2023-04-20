@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainQuizActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="178dp"
+        android:text="Question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="100dp"
+        android:text="Enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionFour" />
+
+    <Button
+        android:id="@+id/optionOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="11dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/optionTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <Button
+        android:id="@+id/optionTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="11dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/optionThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionOne" />
+
+    <Button
+        android:id="@+id/optionThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="11dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/optionFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionTwo" />
+
+    <Button
+        android:id="@+id/optionFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="11dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionThree" />
+
+    <TextView
+        android:id="@+id/totalQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="485dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="485dp"
+        android:layout_marginBottom="50dp"
+        android:text="Total Questions"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
